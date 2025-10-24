@@ -1,0 +1,336 @@
+import type { PromptTemplate } from "@wan/ui";
+
+export const promptTemplates: PromptTemplate[] = [
+  // Nature & Landscapes
+  {
+    id: "nature-1",
+    title: "Serene Mountain Landscape",
+    description: "Peaceful mountain scene with flowing water",
+    category: "Nature",
+    template: "A serene mountain landscape with snow-capped peaks, crystal clear lake reflecting the mountains, gentle waterfall, lush green meadows, golden hour lighting, cinematic, 4k",
+  },
+  {
+    id: "nature-2",
+    title: "Ocean Waves",
+    description: "Dynamic ocean waves crashing on shore",
+    category: "Nature",
+    template: "Powerful ocean waves crashing against rocky cliffs, dramatic sea spray, sunset colors, seagulls flying, cinematic slow motion, ultra realistic",
+  },
+  {
+    id: "nature-3",
+    title: "Forest Magic",
+    description: "Enchanted forest with mystical atmosphere",
+    category: "Nature",
+    template: "Enchanted forest with sunbeams filtering through ancient trees, floating magical particles, misty atmosphere, vibrant green foliage, fairy tale aesthetic",
+  },
+  {
+    id: "nature-4",
+    title: "Desert Dunes",
+    description: "Vast desert landscape with sand dunes",
+    category: "Nature",
+    template: "Vast desert landscape with rolling sand dunes, golden hour light, wind-swept patterns in the sand, clear blue sky, heat shimmer effect, cinematic wide shot",
+  },
+  {
+    id: "nature-5",
+    title: "Aurora Borealis",
+    description: "Northern lights dancing in the night sky",
+    category: "Nature",
+    template: "Aurora borealis dancing in the night sky, vibrant green and purple lights, snow-covered landscape, starry sky, reflection in frozen lake, time-lapse effect",
+  },
+
+  // Urban & Architecture
+  {
+    id: "urban-1",
+    title: "Cyberpunk City",
+    description: "Futuristic neon-lit cityscape",
+    category: "Urban",
+    template: "Futuristic cyberpunk city at night, neon signs in Asian characters, rain-slicked streets reflecting colorful lights, flying vehicles, towering skyscrapers, blade runner aesthetic",
+  },
+  {
+    id: "urban-2",
+    title: "Tokyo Streets",
+    description: "Bustling Tokyo street scene",
+    category: "Urban",
+    template: "Busy Tokyo street during rush hour, pedestrian crossing, vibrant billboards and signs, people with umbrellas, modern architecture, dynamic camera movement",
+  },
+  {
+    id: "urban-3",
+    title: "Modern Architecture",
+    description: "Contemporary building showcase",
+    category: "Urban",
+    template: "Modern architectural masterpiece, sleek glass and steel design, geometric patterns, dramatic lighting, minimalist aesthetic, professional architectural photography",
+  },
+  {
+    id: "urban-4",
+    title: "Street Market",
+    description: "Vibrant street market atmosphere",
+    category: "Urban",
+    template: "Colorful street market bustling with activity, vendors selling fresh produce, hanging lanterns, people shopping, authentic cultural atmosphere, warm afternoon light",
+  },
+  {
+    id: "urban-5",
+    title: "City Skyline",
+    description: "Metropolitan skyline at dusk",
+    category: "Urban",
+    template: "Metropolitan city skyline at dusk, skyscrapers lighting up, transition from day to night, aerial drone shot, smooth camera movement, cinematic color grading",
+  },
+
+  // Abstract & Artistic
+  {
+    id: "abstract-1",
+    title: "Fluid Dynamics",
+    description: "Abstract fluid motion",
+    category: "Abstract",
+    template: "Abstract fluid dynamics, colorful liquids mixing, oil and water effect, macro photography, vibrant colors, smooth flowing motion, mesmerizing patterns",
+  },
+  {
+    id: "abstract-2",
+    title: "Particle Symphony",
+    description: "Dancing particles forming patterns",
+    category: "Abstract",
+    template: "Thousands of glowing particles forming abstract shapes, synchronized movement, color transitions, dark background, elegant choreography, mesmerizing visual effects",
+  },
+  {
+    id: "abstract-3",
+    title: "Geometric Morphing",
+    description: "Transforming geometric shapes",
+    category: "Abstract",
+    template: "Abstract geometric shapes morphing and transforming, metallic surfaces, reflection and refraction, smooth animations, modern minimalist design, 3D rendering",
+  },
+  {
+    id: "abstract-4",
+    title: "Color Explosion",
+    description: "Vibrant color burst",
+    category: "Abstract",
+    template: "Explosion of vibrant colors in slow motion, powder paint bursting, high-speed photography, black background, rainbow spectrum, dramatic lighting",
+  },
+  {
+    id: "abstract-5",
+    title: "Digital Glitch",
+    description: "Glitch art aesthetic",
+    category: "Abstract",
+    template: "Digital glitch art aesthetic, distorted reality, RGB color separation, scan lines, data corruption visuals, cyberpunk atmosphere, matrix-like effects",
+  },
+
+  // Animals & Wildlife
+  {
+    id: "animals-1",
+    title: "Majestic Eagle",
+    description: "Eagle soaring through mountains",
+    category: "Animals",
+    template: "Majestic eagle soaring through mountain peaks, wings spread wide, dramatic slow motion, mountain landscape background, golden hour lighting, cinematic wildlife footage",
+  },
+  {
+    id: "animals-2",
+    title: "Ocean Life",
+    description: "Underwater marine life",
+    category: "Animals",
+    template: "Underwater scene with colorful tropical fish, coral reef, sea turtles swimming, sunlight filtering through water, gentle movement, vibrant marine life, crystal clear water",
+  },
+  {
+    id: "animals-3",
+    title: "Safari Sunset",
+    description: "African wildlife at sunset",
+    category: "Animals",
+    template: "African safari during golden hour, elephants walking across savanna, acacia trees silhouetted, warm sunset colors, cinematic wide shot, peaceful atmosphere",
+  },
+  {
+    id: "animals-4",
+    title: "Wolf Pack",
+    description: "Wolves in snowy forest",
+    category: "Animals",
+    template: "Pack of wolves in snowy forest, winter landscape, dramatic lighting, mysterious atmosphere, alpha wolf leading, cinematic wildlife documentary style",
+  },
+  {
+    id: "animals-5",
+    title: "Butterfly Garden",
+    description: "Butterflies in flower garden",
+    category: "Animals",
+    template: "Colorful butterflies fluttering through blooming flower garden, slow motion, macro details, vibrant flowers, sunny day, peaceful natural setting, shallow depth of field",
+  },
+
+  // Space & Sci-Fi
+  {
+    id: "space-1",
+    title: "Galaxy Journey",
+    description: "Traveling through space",
+    category: "Space",
+    template: "Journey through a colorful galaxy, nebulae clouds in purple and blue, stars streaking past, cosmic dust, space travel effect, cinematic space documentary",
+  },
+  {
+    id: "space-2",
+    title: "Planet Surface",
+    description: "Alien planet landscape",
+    category: "Space",
+    template: "Alien planet surface with unusual rock formations, multiple moons in the sky, strange vegetation, atmospheric effects, sci-fi aesthetic, otherworldly colors",
+  },
+  {
+    id: "space-3",
+    title: "Space Station",
+    description: "Orbiting space station",
+    category: "Space",
+    template: "International space station orbiting Earth, blue planet below, solar panels gleaming, stars in background, realistic space simulation, smooth orbital movement",
+  },
+  {
+    id: "space-4",
+    title: "Meteor Shower",
+    description: "Meteors streaking across sky",
+    category: "Space",
+    template: "Spectacular meteor shower lighting up the night sky, shooting stars, time-lapse effect, dark landscape silhouette, Milky Way visible, awe-inspiring celestial event",
+  },
+  {
+    id: "space-5",
+    title: "Rocket Launch",
+    description: "Space rocket launching",
+    category: "Space",
+    template: "Powerful rocket launch at dawn, flames and smoke, massive thrust, dramatic perspective, slow motion capture, intense energy, cinematic space exploration footage",
+  },
+
+  // Food & Culinary
+  {
+    id: "food-1",
+    title: "Chef's Kitchen",
+    description: "Professional cooking scene",
+    category: "Food",
+    template: "Professional chef preparing gourmet dish, flames in pan, dynamic cooking action, restaurant kitchen, steam rising, artistic plating, culinary expertise, dramatic lighting",
+  },
+  {
+    id: "food-2",
+    title: "Coffee Art",
+    description: "Latte art creation",
+    category: "Food",
+    template: "Barista creating intricate latte art, pouring steamed milk, heart pattern forming, cafe atmosphere, warm morning light, close-up shot, steam rising from cup",
+  },
+  {
+    id: "food-3",
+    title: "Fresh Ingredients",
+    description: "Fresh produce showcase",
+    category: "Food",
+    template: "Fresh organic vegetables and fruits, water droplets, vibrant colors, wooden cutting board, natural lighting, farm-to-table concept, healthy lifestyle aesthetic",
+  },
+  {
+    id: "food-4",
+    title: "Dessert Decadence",
+    description: "Chocolate dessert close-up",
+    category: "Food",
+    template: "Decadent chocolate dessert, molten center flowing, powdered sugar dusting, elegant presentation, macro photography, rich textures, indulgent food photography",
+  },
+  {
+    id: "food-5",
+    title: "Street Food",
+    description: "Street food vendor scene",
+    category: "Food",
+    template: "Street food vendor cooking, sizzling grill, aromatic smoke, authentic cultural cuisine, busy market atmosphere, people gathering, authentic documentary style",
+  },
+
+  // Technology & Innovation
+  {
+    id: "tech-1",
+    title: "Circuit Board",
+    description: "Electronic circuit close-up",
+    category: "Technology",
+    template: "Macro shot of electronic circuit board, glowing LED lights, electricity flowing through circuits, blue and green lighting, high-tech aesthetic, futuristic technology",
+  },
+  {
+    id: "tech-2",
+    title: "Holographic Interface",
+    description: "Futuristic holographic display",
+    category: "Technology",
+    template: "Futuristic holographic user interface, floating displays, interactive technology, blue glowing elements, advanced user interaction, sci-fi UI design",
+  },
+  {
+    id: "tech-3",
+    title: "Robot Assembly",
+    description: "Industrial robots working",
+    category: "Technology",
+    template: "Industrial robots assembling products, precise movements, sparks flying, factory automation, modern manufacturing, metallic surfaces, high-tech production line",
+  },
+  {
+    id: "tech-4",
+    title: "Data Visualization",
+    description: "3D data visualization",
+    category: "Technology",
+    template: "3D data visualization with flowing particles, network connections, abstract information flow, glowing nodes, futuristic analytics, blue and purple color scheme",
+  },
+  {
+    id: "tech-5",
+    title: "VR Experience",
+    description: "Virtual reality interaction",
+    category: "Technology",
+    template: "Person using VR headset, immersed in virtual world, hand gestures, blue ambient lighting, futuristic technology, modern innovation, interactive experience",
+  },
+
+  // Fashion & Lifestyle
+  {
+    id: "fashion-1",
+    title: "Runway Show",
+    description: "Fashion runway presentation",
+    category: "Fashion",
+    template: "High fashion runway show, model walking with confidence, dramatic lighting, designer clothes, professional photography, elegant movement, fashion week atmosphere",
+  },
+  {
+    id: "fashion-2",
+    title: "Urban Fashion",
+    description: "Street style photography",
+    category: "Fashion",
+    template: "Urban street fashion photography, stylish outfit, city background, natural poses, golden hour lighting, contemporary style, confident attitude, editorial aesthetic",
+  },
+  {
+    id: "fashion-3",
+    title: "Luxury Lifestyle",
+    description: "Luxury product showcase",
+    category: "Fashion",
+    template: "Luxury lifestyle product showcase, elegant presentation, sophisticated lighting, premium materials, high-end aesthetic, minimalist design, professional commercial photography",
+  },
+  {
+    id: "fashion-4",
+    title: "Workout Motivation",
+    description: "Fitness training scene",
+    category: "Fashion",
+    template: "Dynamic workout scene, athletic movement, gym environment, motivational energy, dramatic lighting, fitness lifestyle, strength and determination, professional sports photography",
+  },
+  {
+    id: "fashion-5",
+    title: "Yoga Serenity",
+    description: "Peaceful yoga practice",
+    category: "Fashion",
+    template: "Serene yoga practice at sunrise, beach setting, graceful poses, calm ocean waves, meditation atmosphere, wellness lifestyle, peaceful energy, natural beauty",
+  },
+
+  // Business & Corporate
+  {
+    id: "business-1",
+    title: "Modern Office",
+    description: "Contemporary workspace",
+    category: "Business",
+    template: "Modern corporate office, glass walls, natural lighting, collaborative workspace, professional atmosphere, clean design, business team working, productive environment",
+  },
+  {
+    id: "business-2",
+    title: "Team Meeting",
+    description: "Business collaboration",
+    category: "Business",
+    template: "Professional business meeting, team collaboration, whiteboard brainstorming, diverse group, conference room, innovative ideas, productive discussion, corporate culture",
+  },
+  {
+    id: "business-3",
+    title: "Financial Growth",
+    description: "Success visualization",
+    category: "Business",
+    template: "Financial growth visualization, rising charts and graphs, stock market displays, successful business metrics, professional presentation, blue and green color scheme",
+  },
+  {
+    id: "business-4",
+    title: "Handshake Deal",
+    description: "Business partnership",
+    category: "Business",
+    template: "Professional handshake, business partnership, agreement signing, corporate setting, trust and collaboration, successful deal, office background, confident professionals",
+  },
+  {
+    id: "business-5",
+    title: "Innovation Lab",
+    description: "Tech startup environment",
+    category: "Business",
+    template: "Innovative tech startup workspace, creative environment, modern technology, collaborative culture, open space design, young professionals, innovation and creativity",
+  },
+];

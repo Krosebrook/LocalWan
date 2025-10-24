@@ -1,0 +1,54 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Testing
+coverage
+*.log
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Production
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Env files
+.env
+.env*.local
+!.env.example
+
+# Vercel
+.vercel
+
+# Turbo
+.turbo
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python virtual environment
+venv/
+env/
+.venv/
+
+# FastAPI
+*.db
+*.sqlite
+
+# Misc
+*.tgz
+.npmrc
